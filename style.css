@@ -1,13 +1,112 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
-  }
-  
-  body {
-    padding: 0;
+html,
+body{
+  padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #ff3300, hwb(255 0% 0%));
+    width: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1,3 ;
+    color: #1F1E1E;;
   }
   
- 
+ .page-header{
+  position:fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 147px;
+ }
+
+ .page-header_container{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  max-width: 1414px;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  .page-header_logo{
+    flex-shrink: 0;
+    width: 202px;
+    height: 147px;
+    text-decloration: none;
+    font-size: 0;
+  }
+
+  .page-header__nav-link{
+    margin: 0 25px;
+    top: 0;
+
+  }
+  .main{
+    flex: 1 0 auto;
+  }
+
+  .page-footer{
+    flex: 0 0 auto;
+  }
+
+  .btn{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1,3;
+    text-align: center;
+    color:#1F1E1E ;
+    transition: color 0.2s,background-color 0.2s;
+  }
+  .btn hover,
+  .btn :active{
+    color: #FFFFFF ;
+    background-color: #1F1E1E;
+  }
+  
+  .page-header__right-block {
+    display: flex;
+    width: 100%;
+    max-width: 405px;
+    min-width: 280px;
+  }
+  .listing__events-cards{
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+  .events-card {
+    display: flex;
+    width: 100%;
+    margin: 0 30px 120px;
+    max-width: 405px;
+    min-width: 280px;
+    
+  .events-card__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .events-card__picture {
+    display: flex;
+    width: 100%;
+    max-width: 405px;
+    min-width: 280px;
+  }
