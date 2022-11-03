@@ -1,7 +1,7 @@
 html,
 body{
-  padding: 0;
     margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -26,7 +26,7 @@ body {
   height: 147px;
  }
 
- .page-header_container{
+ .page-header__container{
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -34,17 +34,30 @@ body {
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
+ }
 
-  .page-header_logo{
+  .page-header__logo{
     flex-shrink: 0;
     width: 202px;
     height: 147px;
     text-decloration: none;
     font-size: 0;
+  .page-header__logo-icon{
+    width: 100%;
+    height: 100%;
+
+    }
+  }
+  .page-header__nav{
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
   }
 
   .page-header__nav-link{
     margin: 0 25px;
+    font-weight: 600;
+    font-size: 18px;
     top: 0;
 
   }
